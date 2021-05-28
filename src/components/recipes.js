@@ -13,6 +13,6 @@ export default Recipes;
 
 const RecipesContent = styled.div`
   height: 768px;
-  width: 1366px;
+  width: 100%;
   background-color: orange;
 `;

@@ -13,6 +13,6 @@ export default Join;
 
 const JoinContent = styled.div`
   height: 672px;
-  width: 1366px;
+  width: 100%;
   background-color: purple;
 `;

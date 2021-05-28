@@ -13,6 +13,6 @@ export default Services;
 
 const ServicesContent = styled.div`
   height: 727px;
-  width: 1366px;
+  width: 100%;
   background-color: blue;
 `;

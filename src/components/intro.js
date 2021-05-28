@@ -13,6 +13,5 @@ export default Intro;
 
 const IntroContent = styled.div`
   height: 665px;
-  width: 1366px;
-  background-color: beige;
+  width: 100%;
 `;

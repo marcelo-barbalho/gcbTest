@@ -1,23 +1,32 @@
 import React from "react";
-import Layout from "../components/layout";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import Blog from "../components/blog";
 import Intro from "../components/intro";
 import Join from "../components/join";
 import Recipes from "../components/recipes";
 import Services from "../components/services";
+import styled from "styled-components";
+import bgcImage from "../assets/images/Illustration.svg";
 
 const Portal = () => {
   return (
     <>
-      <Layout>
+      <Segment>
+        <Header />
         <Intro />
-        <Recipes />
-        <Services />
-        <Blog />
-        <Join />
-      </Layout>
+      </Segment>
+      <Recipes />
+      <Services />
+      <Blog />
+      <Join />
+      <Footer />
     </>
   );
 };
 
 export default Portal;
+
+const Segment = styled.div`
+  background: url(${bgcImage}) no-repeat #ffffff right top;
+`;
