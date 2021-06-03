@@ -1,5 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import food1 from "../assets/images/comida_1.svg";
+import food2 from "../assets/images/comida_2.svg";
+import food3 from "../assets/images/comida_3.svg";
+import food4 from "../assets/images/comida_4.svg";
 
 const Recipes = () => {
   return (
@@ -13,10 +17,34 @@ const Recipes = () => {
           </p>
         </Description>
         <RecipesContainer>
-          <Recipe>a</Recipe>
-          <Recipe>b</Recipe>
-          <Recipe>c</Recipe>
-          <Recipe>d</Recipe>
+          <Recipe>
+            <ImgContainer>
+              <img src={food1} alt="teste" />
+              <p>Broccoli Salad with Bacon</p>
+              <Button>See Recipe</Button>
+            </ImgContainer>
+          </Recipe>
+          <Recipe>
+            <ImgContainer>
+              <img src={food2} alt="teste" />
+              <p>Classic Beef Burgers</p>
+              <Button>See Recipe</Button>
+            </ImgContainer>
+          </Recipe>
+          <Recipe>
+            <ImgContainer>
+              <img src={food3} alt="teste" />
+              <p>Classic Potato Salad</p>
+              <Button>See Recipe</Button>
+            </ImgContainer>
+          </Recipe>
+          <Recipe>
+            <ImgContainer>
+              <img src={food4} alt="teste" />
+              <p>Cherry Cobbler on the Grill</p>
+              <Button>See Recipe</Button>
+            </ImgContainer>
+          </Recipe>
         </RecipesContainer>
       </RecipesContent>
     </>
@@ -64,4 +92,27 @@ const RecipesContainer = styled.div`
 const Recipe = styled.div`
   width: 48%;
   height: 225px;
+  text-align: right;
+`;
+
+const ImgContainer = styled.div`
+  width: 253px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  p {
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24pt;
+  }
+`;
+const Button = styled.button`
+  background-color: #badc58;
+  border: none;
+  border-radius: 5px;
+  width: 134px;
+  color: #ffffff;
+  font-family: muli, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 `;
