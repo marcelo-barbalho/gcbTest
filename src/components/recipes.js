@@ -18,32 +18,32 @@ const Recipes = () => {
         </Description>
         <RecipesContainer>
           <Recipe>
-            <ImgContainer>
-              <img src={food1} alt="teste" />
-              <p>Broccoli Salad with Bacon</p>
-              <Button>See Recipe</Button>
-            </ImgContainer>
+            <img src={food1} alt="teste" />
+            <RecipeContent>
+              <h3>Broccoli Salad with Bacon</h3>
+              <button>See Recipe</button>
+            </RecipeContent>
           </Recipe>
           <Recipe>
-            <ImgContainer>
-              <img src={food2} alt="teste" />
-              <p>Classic Beef Burgers</p>
-              <Button>See Recipe</Button>
-            </ImgContainer>
+            <img src={food2} alt="teste" />
+            <RecipeContent>
+              <h3>Classic Beef Burgers</h3>
+              <button>See Recipe</button>
+            </RecipeContent>
           </Recipe>
           <Recipe>
-            <ImgContainer>
-              <img src={food3} alt="teste" />
-              <p>Classic Potato Salad</p>
-              <Button>See Recipe</Button>
-            </ImgContainer>
+            <img src={food3} alt="teste" />
+            <RecipeContent>
+              <h3>Classic Potato Salad</h3>
+              <button>See Recipe</button>
+            </RecipeContent>
           </Recipe>
           <Recipe>
-            <ImgContainer>
-              <img src={food4} alt="teste" />
-              <p>Cherry Cobbler on the Grill</p>
-              <Button>See Recipe</Button>
-            </ImgContainer>
+            <img src={food4} alt="teste" />
+            <RecipeContent>
+              <h3>Cherry Cobbler on the Grill</h3>
+              <button>See Recipe</button>
+            </RecipeContent>
           </Recipe>
         </RecipesContainer>
       </RecipesContent>
@@ -53,8 +53,7 @@ const Recipes = () => {
 
 export default Recipes;
 
-const RecipesContent = styled.div`
-  height: 768px;
+const RecipesContent = styled.section`
   width: 100%;
   background-color: #fafafc;
   padding: 20px;
@@ -85,34 +84,22 @@ const RecipesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1092px;
   width: 80%;
-  margin: 4rem auto;
+  margin: 2rem auto;
   height: 486px;
 `;
 const Recipe = styled.div`
   width: 48%;
   height: 225px;
-  text-align: right;
-`;
 
-const ImgContainer = styled.div`
-  width: 253px;
+  background-color: #fff;
+  box-shadow: 0px 15px 20px rgba(29, 22, 77, 0.18);
+  max-width: 528px;
   display: flex;
   align-items: center;
   flex-direction: row;
-  p {
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    font-size: 24pt;
-  }
 `;
-const Button = styled.button`
-  background-color: #badc58;
-  border: none;
-  border-radius: 5px;
-  width: 134px;
-  color: #ffffff;
-  font-family: muli, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+const RecipeContent = styled.div`
+  padding: 2rem;
 `;

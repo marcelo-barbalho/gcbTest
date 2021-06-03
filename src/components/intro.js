@@ -41,8 +41,4 @@ const Search = styled.div`
   input {
     height: 52px;
   }
-  button {
-    background-color: green;
-    padding: 10px;
-  }
 `;

@@ -29,4 +29,5 @@ export default Portal;
 
 const Segment = styled.div`
   background: url(${bgcImage}) no-repeat #ffffff right top;
+  background-size: contain;
 `;

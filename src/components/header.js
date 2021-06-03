@@ -56,7 +56,7 @@ const Logo = styled.div`
 `;
 const MenuNav = styled.nav`
   font-size: 16pt;
-  max-width: 30%;
+
   display: flex;
   justify-content: space-between;
   font-weight: 700;
@@ -74,11 +74,6 @@ const ItemLink = styled.a`
   color: #ffffff;
 `;
 const RegButton = styled.button`
-  height: 52px;
-  width: 130px;
-  border-radius: 5px;
-  border: none;
+  background-color: #fff;
   color: #badc58;
-  font-weight: 700;
-  font-size: 16pt;
 `;
