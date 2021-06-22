@@ -7,7 +7,7 @@ const Services = () => {
     <>
       <ServicesContent>
         <Container>
-          <ServiceTitle>The best services ready To serve you</ServiceTitle>
+          <ServiceTitle>The best services ready to serve you</ServiceTitle>
           <ServiceText>
             <p>
               Far far away, behind the word mountains, far from the countries
@@ -33,11 +33,11 @@ export default Services;
 
 const ServicesContent = styled.div`
   height: 727px;
-  width: 100%;
+  width: 75%;
   background: url(${serviceImg}) no-repeat #ffffff left top;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-end;
 `;
 const ServiceTitle = styled.h1`
   font-weight: bold;
@@ -45,7 +45,9 @@ const ServiceTitle = styled.h1`
   font-size: 32pt;
 `;
 const ServiceText = styled.div`
+  padding: 25px 0;
   p {
+    padding: 15px 0;
     color: #bcbcbc;
     font-family: muli, sans-serif;
     font-weight: 400;

@@ -17,7 +17,7 @@ font-style: normal;
 font-size:16px;
 }
 h1,h2,h3,h4{
-  
+   color: #2D3561;
     font-family: "Montserrat", sans-serif;
 }
 h3{
